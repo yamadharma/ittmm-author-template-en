@@ -1,0 +1,187 @@
+% This is a LaTeX template
+% for preparing documents for ITTMM conference
+%
+\documentclass[60x84/16,8pt]{ittmm}
+
+% Don't remove definition.tex
+\input{definition}
+
+\begin{document}
+
+{\selectlanguage{english}
+
+\udc{004.4}
+
+\title{ITTMM Conference Thesis Template}
+
+\author[1,2]{A. B. First}
+\author[1]{C. D. Second}
+
+\address[1]{Department of Applied Probability and Informatics\\
+Peoples' Friendship University of Russia\\
+Miklukho-Maklaya str. 6, Moscow, 117198, Russia}
+\address[2]{Laboratory of Information Technologies\\
+Joint Institute for Nuclear Research\\
+Joliot-Curie 6, Dubna, Moscow region, 141980, Russia}
+
+\begin{abstract}
+Place here short abstract in English (between 150 and 250 words).
+\end{abstract}
+
+\email{\url{first@rudn.university}, \url{second@rudn.university}}
+
+\keywords{computer science, information technologies, conference proceedings}
+
+\tnanks{}
+
+\alttitle{Шаблон оформления рукописи доклада
+  на конференцию <<ITTMM>>}
+
+\altauthor[1,2]{А. Б. Первый}
+\altauthor[1]{В. Г. Второй}
+
+\altaddress[1]{Кафедра прикладной информатики и теории вероятностей,\\
+  Российский университет дружбы народов,\\
+  ул. Миклухо-Маклая, д.6, Москва, Россия, 117198}
+\altaddress[2]{Лаборатория информационных технологий,\\
+Объединённый институт ядерных исследований,\\
+ул. Жолио-Кюри 6, Дубна, Московская область, Россия, 141980}
+
+\begin{altabstract}
+Разместите здесь аннотацию на русском языке (150--250 слов).
+\end{altabstract}
+
+\altkeywords{компьютерные науки, информационные технологии, проведение конференции}
+
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+The proposed submission should describe original work not submitted or
+published elsewhere and should begin with an abstract. The complete
+text should be 3 pages long in
+total, i.e. including all figures, tables and references. 
+
+
+\section{Main section} 
+\label{sec:base-section}
+
+Additional care must be taken when inserting formulas, figures and tables.
+
+Formula
+\begin{equation}
+a^n+b^n=c^n
+\label{eq:Fermat's_Last_Theorem}
+\end{equation}
+with reference~\eqref{eq:Fermat's_Last_Theorem}.
+
+It is essential that all illustrations are as clear and as legible as
+possible. Vector graphics (pdf and eps)~--- instead of rasterized
+images~--- should be used for diagrams and schemas whenever
+possible. Please check that the lines in line drawings are not
+interrupted and have a constant width. Grids and details within the
+figures must be clearly legible and may not be written one on top of
+the other. Line drawings are to have a resolution of at least 600 dpi
+(preferably 1200 dpi). The lettering in figures should not use font
+sizes smaller than 6 pt. Figures are to be
+numbered and to have a caption which should always be positioned under
+the figures, in contrast to the caption belonging to a table, which
+should always appear above the table (see Fig.~\ref{fig:logo}).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\linewidth]{embl}
+  \caption{Logo}
+  \label{fig:logo}
+\end{figure}
+
+Ensure that all the tables are cited in the text in the correct
+order (see Table~\ref{tab:sampletable}). 
+
+\begin{table}[b]
+  \centering
+  \caption{Table example}
+  \label{tab:sampletable}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    no & $X$ & $Y$ & $R$ & Color\\
+    \hline
+    1 &     100  &  170 & 30 & red\\
+    2 &     100  &  90  & 60 & red\\
+    3 &     230  &  250 & 50 & red\\
+    4 &     130  &  240 & 60 & red\\
+    5 & 300  &      130 & 30 & red\\
+    6 &     200  &  150     & 90 & red\\
+    \hline
+  \end{tabular}
+\end{table}
+
+Text fragments of fewer than four lines should not appear at the tops
+or bottoms of pages, following a table or figure. In such cases, it is
+better to set the figures right at the top or right at the bottom of
+the page. A figure should never be placed in the middle of a
+paragraph.
+
+The list of references should be given at the end of the text in a
+separate section. Citations inserted in the text should use square
+brackets and the ordinal number of the item. Numbers should be grouped
+where appropriate.
+
+Citation examples: book~\cite{mathtensor,
+  jones-fogelin:tcqd}, the section in the book~\cite{Muller2006},
+article~\cite{Arduengo1991, Booth1962},
+conference proceedings~\cite{Hope2005}.
+
+\section{Conclusions}
+
+The conclusion should contain a brief summary of the study.
+
+\begin{acknowledgments}
+  The work is partially supported by RFBR grant No~16-01-20379.
+\end{acknowledgments}
+
+% \begin{thebibliography}{99}
+
+% \bibitem{mathtensor}
+% L.~Parker, S.~M. Christensen, MathTensor: a system for doing tensor analysis by
+%   computer, Addison-Wesley, 1994.
+
+% \bibitem{jones-fogelin:tcqd}
+% W.~T. Jones, R.~J. Fogelin, The Twentieth Century to Quine and Derrida, A
+%   History of Western Philosophy, Harcourt Brace College Publishers, 1997.
+
+% \bibitem{Muller2006}
+% G.~M. Sheldrick, A Short History of SHELXL, International Union of
+%   Crystallography and Oxford University Press, 2006.
+
+% \bibitem{Arduengo1991}
+% A.~J. Arduengo, III, R.~L. Harlow, M.~Kline, A stable crystalline carbene,
+%   J.~Am. Chem. Soc. 113~(1)  361--363.
+% \newblock \href {http://dx.doi.org/10.1021/ja00001a054}
+%   {\path{doi:10.1021/ja00001a054}}.
+
+% \bibitem{Booth1962}
+% G.~Booth, J.~Chatt, The reactions of carbon monoxide and nitric oxide with
+%   tertiary phosphine complexes of iron({II}), cobalt({II}), and nickel({II}),
+%   J.~Chem. Soc.  2099--2106. \href {http://dx.doi.org/10.1039/JR9620002099}
+%   {\path{doi:10.1039/JR9620002099}}.
+
+% \bibitem{Hope2005}
+% E.~Hope, J.~Bennett, A.~Stuart, Fluorous zirconium phosphonates: novel
+%   inorganic supports for catalysis, in: Pacifichem (International Chemical
+%   Congress of Pacific Basin Societies), no. 961, Pacific Basin Chemical
+%   Societies.
+
+% \end{thebibliography}
+
+%% You may use bibtex.
+\bibliographystyle{elsarticle-num}
+\bibliography{main}
+
+\makealttitle
+
+} %END \selectlanguage
+
+\end{document}
